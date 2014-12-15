@@ -1,0 +1,54 @@
+@charset "UTF-8";
+html,
+body {
+  background-color: #f7f7f7;
+  color: #9ebc19;
+  font-family: 'ヒラギノ丸ゴ Pro W4', 'Hiragino Maru Gothic ProN', 'ヒラギノ丸ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+  padding-top: 70px; }
+
+.box {
+  -webkit-background-size: contain;
+  background-size: contain;
+  box-sizing: border-box;
+  margin: 0px 1% 16px;
+  line-height: 24px; }
+  .box .box-inner {
+    color: #9ebc19;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 12px;
+    -webkit-box-shadow: #999999 0px 0px 4px;
+    box-shadow: #999999 0px 0px 4px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    height: 100%; }
+    .box .box-inner:hover {
+      -webkit-box-shadow: #cde853 0px 0px 10px;
+      box-shadow: #cde853 0px 0px 10px; }
+  .box .img-box-header {
+    display: block;
+    border-radius: 4px 4px 0px 0px;
+    width: 100%; }
+  .box .products-name {
+    text-align: center;
+    margin: 16px 0; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #9ebc19; }
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #bfe226; }
+
+.navbar .nav {
+  margin: 0;
+  display: table;
+  width: 100%; }
+  .navbar .nav li {
+    display: table-cell;
+    float: none;
+    font-size: 16px; }
+    .navbar .nav li a {
+      font-weight: bold;
+      text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
