@@ -6,6 +6,65 @@ body {
   font-family: 'ヒラギノ丸ゴ Pro W4', 'Hiragino Maru Gothic ProN', 'ヒラギノ丸ゴ ProN W3', Meiryo, メイリオ, sans-serif;
   padding-top: 70px; }
 
+.container h1 {
+  padding-top: 80px;
+  padding-bottom: 20px; }
+
+dd p {
+  margin-bottom: 0; }
+
+.works {
+  line-height: 60px; }
+
+.month {
+  padding-right: 60px;
+  background-image: url(../img/historybar-circle.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 60px;
+  line-height: 60px; }
+
+/*
+ * .history-event {
+ *     line-height: 60px;
+ * }
+ * 
+ * .date {
+ *     padding-right: 60px;
+ *     background-image: url(../img/historybar-circle.svg);
+ *     background-repeat: no-repeat;
+ *     background-position:right top;
+ *     height: 60px;
+ *     line-height: 60px;
+ * }
+ */
+.languages {
+  line-height: 60px; }
+
+.history-line {
+  padding-right: 60px;
+  background-image: url(../img/historybar-line.svg);
+  background-repeat: repeat-y;
+  background-position: right top;
+  height: 60px;
+  line-height: 60px; }
+
+.dl-history {
+  /* @extend .dl-horizontal; */ }
+  .dl-history .history-date {
+    background-image: url(../img/historybar-line.svg);
+    background-position: right center;
+    padding-right: 60px;
+    background-repeat: no-repeat; }
+    .dl-history .history-date .date {
+      display: block;
+      background-image: url(../img/historybar-circle.svg);
+      background-position: right top;
+      background-repeat: repeat-y; }
+
+.history-event {
+  line-height: 60px; }
+
 .box {
   -webkit-background-size: contain;
   background-size: contain;
@@ -36,8 +95,8 @@ body {
 
 .navbar-default .navbar-nav > li > a {
   color: #9ebc19; }
-  .navbar-default .navbar-nav > li > a:hover {
-    color: #bfe226; }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active {
+    color: #e54564; }
 
 .navbar .nav {
   margin: 0;

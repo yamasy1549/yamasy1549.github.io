@@ -1,170 +1,225 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-  <script>
-    $(function(){
-      $('a[href^=#]').click(function() {
-        var speed = 400;
-        var href= $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top;
-        $('body,html').animate({scrollTop:position}, speed, 'swing');
-          return false;
-        });
-    });
-  </script>
+        <title>yamasy's page</title>
+    </head>
+    <body>
 
-    <title>yamasy's page</title>
-</head>
-<body>
-
-    <!-- 例のnavbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-usamimi">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse" id="navbar-yamasy">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#top">yamasy's page</a>
-                    </li>
-                    <li>
-                        <a href="#history"><i class="fa fa-puzzle-piece"></i> History</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio"><i class="fa fa-cog"></i> Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#award"><i class="fa fa-video-camera"></i> Awards</a>
-                    </li>
-                </ul>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-yamasy">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-yamasy">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#top">yamasy's page</a>
+                        </li>
+                        <li>
+                            <a href="#history"><i class="fa fa-code-fork"></i> History</a>
+                        </li>
+                        <li>
+                            <a href="#portfolios"><i class="fa fa-cube"></i> Portfolios</a>
+                        </li>
+                        <li>
+                            <a href="#awards"><i class="fa fa-trophy"></i> Awards</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-8" id="history">
-            <h1>History</h1>
-            <dl class="yamasy-history dl-horizontal">
-                <dt class="month">April</dt>
-                <dt class="timeline"></dt> <!-- bgに丸の画像 -->
-                <dd class="works">明石工業高等専門学校 入学</dd>
-                <dt class="month">August-November</dt>
-                <dt class="timeline"></dt>
-                <dd class="works">actif quest</dd>
-                <dd class="languages"><img src="" alt="使用言語"></dd>
-                <dt class="month">September</dt>
-                <dt class="timeline"></dt>
-                <dd class="works">MAEMUKI</dd>
-                <dd class="languages"><img src="" alt="使用言語"></dd>
-                <dt class="month">October</dt>
-                <dt class="timeline"></dt>
-                <dd class="works">ぴょんぴょんうさみみ</dd>
-                <dd class="languages"><img src="" alt="使用言語"></dd>
-            </dl>
-        </div>
-    </div>
+        <div class="wrapper">
+            <div class="container" id="top">
+                <h1><img src="img/yamasy-top.svg" alt="top画像"></h1>
+            </div>
 
-    <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-8" id="portfolio">
-            <h1>Portfolio</h1>
-            <div class="row">
-                <div class="col-sm-4">
-                    <!-- box型のPortfolioリンク -->
-                    <div class="box">
-                        <a href="https://play.google.com/store/apps/details?id=info.actfesta.android.actifquest&hl=ja" class="box-inner">
-                            <header> 
-                                <img src="img/actifquest.svg" alt="actif quest" class="img-box-header">
-                            </header>
-                            <section class="products-name">
-                                <p class="box-counter"> actif quest</p>
-                            </section>
-                        </a>
+            <div class="container" id="history">
+                <div class="row">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <h1><i class="fa fa-code-fork"></i> History</h1>
+
+                    <!--
+                       - <dl class="dl-horizontal dl-history">
+                       -     <dt class="history-date">
+                       -         <time class="date">2014/04</time>
+                       -     </dt>
+                       -     <dd class="histry-event">
+                       -         明石工業高等専門学校 入学
+                       -     </dd>
+                       -     <dt class="history-date">
+                       -         <time class="date">2014/08~11</time>
+                       -     </dt>
+                       -     <dd class="history-event">
+                       -         actif quest
+                       -     </dd>
+                       -     <dt class="history-line"></dt>
+                       -     <dd class="languages">
+                       -         <img src="img/skills1.svg" alt="" width="30%" height="30%">
+                       -     </dd>
+                       -     <dt class="history-date">
+                       -         <time class="date">2014/09</time>
+                       -     </dt>
+                       -     <dd class="history-event">
+                       -         MAEMUKI
+                       -     </dd>
+                       -     <dt class="history-line"></dt>
+                       -     <dd class="languages">
+                       -         <img src="img/skills1.svg" alt="" width="30%" height="30%">
+                       -     </dd>
+                       -     <dt class="history-date">
+                       -         <time class="date">2014/10</time>
+                       -     </dt>
+                       -     <dd class="history-event">
+                       -         ぴょんぴょんうさみみ
+                       -     </dd>
+                       -     <dt class="history-line"></dt>
+                       -     <dd class="languages">
+                       -         <img src="img/skills2.svg" alt="" width="30%" height="30%">
+                       -     </dd>
+                       - </dl>
+                       -->
+
+                        <dl class="yamasy-history dl-horizontal">
+                            <dt class="month">2014/04 </dt>
+                            <dd class="works">明石工業高等専門学校 入学</dd>
+                            <dt class="month">2014/08~11</dt>
+                            <dd class="works">actif quest</dd>
+                            <dt class="history-line"></dt>
+                            <dd class="languages">
+                                <img src="img/skills1.svg" alt="RoR,HTML5,CSS3" width="30%" height="30%">
+                            </dd>
+                            <dt class="month">2014/09</dt>
+                            <dd class="works">MAEMUKI</dd>
+                            <dt class="history-line"></dt>
+                            <dd class="languages">
+                                <img src="img/skills1.svg" alt="RoR,HTML5,CSS" width="30%" height="30%">
+                            </dd>
+                            <dt class="month">2014/10</dt>
+                            <dd class="works">ぴょんぴょんうさみみ</dd>
+                            <dt class="history-line"></dt>
+                            <dd class="languages">
+                                <img src="img/skills2.svg" alt="Arduino,HTML5,CSS" width="30%" height="30%">
+                            </dd>
+                        </dl>
                     </div>
                 </div>
-                <div class="col-sm-8">
-                    <section>
-                        <p>明石高専祭を楽しくするスマートフォンアプリです。</p>
-                        <p>Using skills: Ruby on Rails,HTML5,CSS3</p>
-                    </section>
-                </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="box">
-                        <a href="http://izumin.info/pyonpyon-usamimi/" class="box-inner">
-                            <header> 
-                                <img src="img/usamimi.png" alt="ぴょんぴょんうさみみ" class="img-box-header">
-                            </header>
-                            <section class="products-name">
-                                <p class="box-counter"> ぴょんぴょんうさみみ</p>
-                            </section>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-8">
-                    <section>
-                        <p>うさみみ型ウェアラブルデバイスです。</p>
-                        <p>MashupBattle北海道予選最優秀賞</p>
-                        <p>Using skills: HTML5,CSS3</p>
-                    </section>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="box">
-                        <a href="http://maemuki.izumin.info/" class="box-inner">
-                            <header> 
-                                <img src="img/maemuki.png" alt="MAEMUKI" class="img-box-header">
-                            </header>
-                            <section class="products-name">
-                                <p class="box-counter"> MAEMUKI</p>
-                            </section>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-8">
-                    <section>
-                        <p>Twitterでのネガポジ度を判定するWebアプリです。</p>
-                        <p>MA10大阪一次予選ハッカソン最優秀賞</p>
-                        <p>Using skills: Ruby on Rails,HTML5,CSS3</p>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-8" id="award">
-            <h1>Awards</h1>
-            <dl class="achievemtnt dl-horizontal">
-                <dt class="date">2014/08</dt>
-                <dd class="awards"><a class="award" href="#">Civic Hack Osaka 2014</a></dd>
-                <dd class="awards">1位入賞</dd>
-                <dt class="date">2014/09</dt>
-                <dd class="awards"><a class="award" href="#">MA10大阪一次予選ハッカソン</a></dd>
-                <dd class="awards">最優秀賞</dd>
-                <dt class="date">2014/10</dt>
-                <dd class="awards"><a class="award" href="#">MashupBattle北海道予選</a>
-                <dd class="awards">最優秀賞</dd>
-            </dl>
+            <div class="container" id="portfolios">
+                <div class="row">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <h1><i class="fa fa-cube"></i> Portfolios</h1>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="box">
+                                    <a href="https://play.google.com/store/apps/details?id=info.actfesta.android.actifquest&hl=ja" class="box-inner">
+                                        <header>
+                                            <img src="img/actifquest.svg" alt="actif quest" class="img-box-header">
+                                        </header>
+                                        <section class="products-name">
+                                            <p class="box-counter"> actif quest</p>
+                                        </section>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <section>
+                                    <p>明石高専祭を楽しくするスマートフォンアプリです。</p>
+                                    <p>Using skills: Ruby on Rails,HTML5,CSS3</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="box">
+                                    <a href="http://izumin.info/pyonpyon-usamimi/" class="box-inner">
+                                        <header> 
+                                            <img src="img/usamimi.png" alt="ぴょんぴょんうさみみ" class="img-box-header">
+                                        </header>
+                                        <section class="products-name">
+                                            <p class="box-counter"> ぴょんぴょんうさみみ</p>
+                                        </section>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <section>
+                                    <p>うさみみ型ウェアラブルデバイスです。</p>
+                                    <p>MashupBattle北海道予選最優秀賞</p>
+                                    <p>Using skills: HTML5,CSS3</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="box">
+                                    <a href="http://maemuki.izumin.info/" class="box-inner">
+                                        <header> 
+                                            <img src="img/maemuki.png" alt="MAEMUKI" class="img-box-header">
+                                        </header>
+                                        <section class="products-name">
+                                            <p class="box-counter"> MAEMUKI</p>
+                                        </section>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <section>
+                                    <p>Twitterでのネガポジ度を判定するWebアプリです。</p>
+                                    <p>MA10大阪一次予選ハッカソン最優秀賞</p>
+                                    <p>Using skills: Ruby on Rails,HTML5,CSS3</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="awards">
+                <div class="row">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <h1><i class="fa fa-trophy"></i> Awards</h1>
+                        <dl class="yamasy-award dl-horizontal">
+                            <dt class="date">2014/08</dt>
+                            <dd class="awards"><a class="award" href="http://civichack-osaka-2014.peatix.com/">Civic Hack Osaka 2014</a></dd>
+                            <dd class="awards">1位入賞</dd>
+                            <dt class="date">2014/09</dt>
+                            <dd class="awards"><a class="award" href="http://mashupawards.tumblr.com/post/98778514366/ma10">Mashup Hackathon 大阪 ハードウェア＆ソフトウェア〜MA10一次予選ハッカソン〜</a></dd>
+                            <dd class="awards">最優秀賞</dd>
+                            <dt class="date">2014/10</dt>
+                            <dd class="awards"><a class="award" href="http://mashupawards.tumblr.com/post/101840874626/battle-mashup-battle-1st-stage-in">Mashup Battle 1st Stage in 北海道</a>
+                            <dd class="awards">最優秀賞</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
+
+        <script>
+            $(function(){
+                $('a[href^=#]').click(function() {
+                    var speed = 400;
+                    var href= $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top;
+                    $('body,html').animate({scrollTop:position}, speed, 'swing');
+                    return false;
+                });
+            });
+        </script>
+
+    </body>
 </html>
