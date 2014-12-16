@@ -9,6 +9,10 @@ body {
     font-family:'ヒラギノ丸ゴ Pro W4', 'Hiragino Maru Gothic ProN', 'ヒラギノ丸ゴ ProN W3', Meiryo, メイリオ, sans-serif;
 }
 
+.wrapper {
+    margin-bottom: 40px;
+}
+
 .container {
     h1 {
         padding-top: 80px;
@@ -16,7 +20,19 @@ body {
     }
 }
 
-.myname {
+.myself {
+    h3 {
+        margin-bottom: 20px;
+    }
+    h4 {
+        margin-left: 20px;
+    }
+    p {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
     a {
         &:link,
         &:visited {

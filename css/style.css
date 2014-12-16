@@ -5,13 +5,25 @@ body {
   color: #9ebc19;
   font-family: 'ヒラギノ丸ゴ Pro W4', 'Hiragino Maru Gothic ProN', 'ヒラギノ丸ゴ ProN W3', Meiryo, メイリオ, sans-serif; }
 
+.wrapper {
+  margin-bottom: 40px; }
+
 .container h1 {
   padding-top: 80px;
   padding-bottom: 20px; }
 
-.myname a:link, .myname a:visited {
+.myself h3 {
+  margin-bottom: 20px; }
+.myself h4 {
+  margin-left: 20px; }
+.myself p {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px; }
+.myself a:link, .myself a:visited {
   color: #9ebc19; }
-.myname a:hover, .myname a:active {
+.myself a:hover, .myself a:active {
   color: #e54564; }
 
 dd p {
