@@ -39,9 +39,8 @@ dd p {
   background-position: right top;
   height: 60px;
   line-height: 60px; }
-
-.month:first-child {
-  background-image: url(../img/historybar-circle-radius.svg); }
+  .month:first-of-type {
+    background-image: url(../img/historybar-circle-radius.svg); }
 
 .languages {
   line-height: 60px; }
@@ -53,6 +52,8 @@ dd p {
   background-position: right top;
   height: 60px;
   line-height: 60px; }
+  .history-line:last-of-type {
+    background-image: url(../img/historybar-line-radius.svg); }
 
 /*
  * 

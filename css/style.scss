@@ -62,9 +62,9 @@ dd {
     background-position:right top;
     height: 60px;
     line-height: 60px;
-}
-.month:first-child {
-    background-image: url(../img/historybar-circle-radius.svg);
+    &:first-of-type {
+        background-image: url(../img/historybar-circle-radius.svg);
+    }
 }
 
 .languages {
@@ -78,6 +78,9 @@ dd {
     background-position: right top;
     height: 60px;
     line-height: 60px;
+    &:last-of-type {
+        background-image: url(../img/historybar-line-radius.svg);
+    }
 }
 
 /*
