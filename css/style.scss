@@ -69,6 +69,11 @@ dd {
 
 .languages {
     line-height: 60px;
+    height: 60px;
+    img {
+        width: 80%;
+        height: 80%;
+    }
 }
 
 .history-line {
@@ -82,21 +87,6 @@ dd {
         background-image: url(../img/historybar-line-radius.svg);
     }
 }
-
-/*
- * 
- * .dl-history {
- *     [> @extend .dl-horizontal; <]
- *     .history-date {
- *         .date {
- *             display: block;
- *             background-image: url(../img/historybar-circle.svg);
- *             background-position: right top;
- *             background-repeat: repeat-y;
- *         }
- *     }
- * }
- */
 
 .history-event {
     line-height: 60px;

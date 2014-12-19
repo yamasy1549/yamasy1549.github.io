@@ -43,7 +43,11 @@ dd p {
     background-image: url(../img/historybar-circle-radius.svg); }
 
 .languages {
-  line-height: 60px; }
+  line-height: 60px;
+  height: 60px; }
+  .languages img {
+    width: 80%;
+    height: 80%; }
 
 .history-line {
   padding-right: 60px;
@@ -55,20 +59,6 @@ dd p {
   .history-line:last-of-type {
     background-image: url(../img/historybar-line-radius.svg); }
 
-/*
- * 
- * .dl-history {
- *     [> @extend .dl-horizontal; <]
- *     .history-date {
- *         .date {
- *             display: block;
- *             background-image: url(../img/historybar-circle.svg);
- *             background-position: right top;
- *             background-repeat: repeat-y;
- *         }
- *     }
- * }
- */
 .history-event {
   line-height: 60px; }
 
