@@ -114,9 +114,8 @@ body {
 .history-languages {
     height: 60px;
     line-height: 60px;
-    img {
-        width: 80%;
-        height: 80%;
+    .languages-img {
+        height: 100%;
     }
 }
 
