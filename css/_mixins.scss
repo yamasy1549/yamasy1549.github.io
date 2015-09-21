@@ -1,0 +1,32 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin link_hover {
+  color: $body-color;
+  text-decoration: none;
+
+  &:hover { color: $body-accent-color; }
+}
+
+@mixin link_underline {
+  border-bottom: dotted 2px lighten($body-color, 20%);
+}
+
+@mixin icon_colors {
+  .icon-prog-rails,
+  .icon-prog-ruby {
+    color: lighten(#A62C39, 20%);
+  }
+
+  .icon-html5-01 { color: lighten(#DF4B25, 15%); }
+  .icon-css3-01 { color: lighten(#016FBA, 30%); }
+}

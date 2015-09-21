@@ -1,0 +1,60 @@
+.history {
+  display: table;
+  width: 100%;
+
+  a { @include link_hover; }
+
+  .time {
+    background-image: url(../img/historybar-circle.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: $history-height;
+    line-height: $history-height;
+    width: $history-left-width;
+    display: table-cell;
+    float: left;
+    clear: both;
+    text-align: right;
+    padding-right: $history-height;
+    &:first-of-type {
+      background-image: url(../img/historybar-circle-radius.svg);
+    }
+  }
+
+  .works {
+    line-height: $history-height;
+    display: table-cell;
+    float: left;
+    margin: 0;
+    padding-left: $history-padding-left;
+
+    a { @include link_underline; }
+  }
+
+  .line {
+    background-image: url(../img/historybar-line.svg);
+    background-repeat: repeat-y;
+    background-position: right top;
+    height: $history-height;
+    line-height: $history-height;
+    width: $history-left-width;
+    display: table-cell;
+    float: left;
+    clear: both;
+    text-align: right;
+    margin: 0;
+    padding-right: $history-height;
+    &:last-of-type {
+      background-image: url(../img/historybar-line-radius.svg);
+    }
+  }
+
+  .skills {
+    @include icon_colors;
+    font-size: $history-skill-font-size;
+    line-height: $history-height / 2;
+    display: table-cell;
+    float: left;
+    padding-left: $history-padding-left;
+  }
+}

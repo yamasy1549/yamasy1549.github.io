@@ -1,0 +1,12 @@
+footer {
+  background-color: $footer-bg;
+  color: $footer-color;
+  height: $footer-height;
+  line-height: $footer-height;
+  text-align: center;
+
+  a {
+    color: $footer-color;
+    text-decoration: none;
+  }
+}

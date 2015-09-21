@@ -1,0 +1,16 @@
+html,
+body {
+  background-color: $body-bg;
+  color: $body-color;
+  font-family:'ヒラギノ丸ゴ Pro W4', 'Hiragino Maru Gothic ProN', 'ヒラギノ丸ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+  font-size: $body-font-size;
+  margin: 0;
+}
+
+.wrapper {
+  margin: auto $wrapper-margin;
+
+  a { text-decoration: none; }
+}
+
+section { margin: $section-margin auto; }
