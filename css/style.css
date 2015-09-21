@@ -928,6 +928,7 @@ footer {
 
 .history {
   display: table;
+  font-size: 11.2px;
   width: 100%; }
   .history a {
     color: #9ebc19;

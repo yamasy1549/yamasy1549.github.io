@@ -1,5 +1,6 @@
 .history {
   display: table;
+  font-size: $history-font-size;
   width: 100%;
 
   a { @include link_hover; }
