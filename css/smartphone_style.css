@@ -908,8 +908,8 @@ footer {
       float: left;
       width: 100%; }
   .myself .introduction {
-    display: table-cell;
-    float: left;
+    display: block;
+    float: auto;
     padding-left: 0;
     text-align: center; }
     .myself .introduction a {

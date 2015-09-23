@@ -8,15 +8,15 @@
     img {
       background-color: $top-logo-bg;
       border-radius: 50%;
-      display: table-cell;
-      float: left;
+      display: $top-logo-display;
+      float: $top-logo-float;
       width: 100%;
     }
   }
 
   .introduction {
-    display: table-cell;
-    float: left;
+    display: $top-introduction-display;
+    float: $top-introduction-float;
     padding-left: $top-introduction-padidng;
     text-align: $top-text-align;
 

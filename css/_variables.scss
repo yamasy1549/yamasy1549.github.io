@@ -22,12 +22,16 @@ $nav-border-color: $gray;
 $nav-color: $light-green;
 $nav-height: 60px;
 $nav-hover-color: $pink;
+$top-introduction-display: table-cell;
+$top-introduction-float: left;
 $nav-icon-font-size: auto;
 $nav-font-display: auto;
 $nav-font-size: 16px;
 $nav-title-width: auto;
 
 $top-logo-bg: $white;
+$top-logo-display: table-cell;
+$top-logo-float: left;
 $top-logo-width: 50%;
 $top-introduction-padidng: 40px;
 $top-social-display: inline-block;
@@ -35,7 +39,7 @@ $top-social-font-size: $body-font-size * 1.5;
 $top-social-width: 10%;
 $top-text-align: start;
 
-$history-font-size: $body-font-size * 0.8;
+$history-font-size: $body-font-size;
 $history-height: 60px;
 $history-left-width: 20%;
 $history-padding-left: 20px;
