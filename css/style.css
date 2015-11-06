@@ -981,6 +981,8 @@ footer {
     .history .skills .icon-prog-rails,
     .history .skills .icon-prog-ruby {
       color: #d6626f; }
+    .history .skills .icon-adb-illustrator {
+      color: #fe923a; }
     .history .skills .icon-html5-01 {
       color: #e98268; }
     .history .skills .icon-css3-01 {
@@ -1015,6 +1017,8 @@ footer {
     .portfolio .detail .icon-prog-rails,
     .portfolio .detail .icon-prog-ruby {
       color: #d6626f; }
+    .portfolio .detail .icon-adb-illustrator {
+      color: #fe923a; }
     .portfolio .detail .icon-html5-01 {
       color: #e98268; }
     .portfolio .detail .icon-css3-01 {
