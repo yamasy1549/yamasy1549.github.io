@@ -1247,8 +1247,12 @@ a:link, a:visited, a:hover, a:active {
   display: block;
   clear: both; }
 
-/* @import 'navbar'; */
-/* @import 'footer'; */
+
+.footer {
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 1px; }
+
 /* @import 'top'; */
 /* @import 'histories'; */
 /* @import 'portfolios'; */
