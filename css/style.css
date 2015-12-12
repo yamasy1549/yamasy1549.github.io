@@ -1261,7 +1261,8 @@ body > section:nth-child(even) {
 
 #heading .heading-wrapper {
   width: 300px;
-  margin: 100px auto; }
+  margin: 0 auto;
+  padding: 100px 0; }
 #heading .heading {
   letter-spacing: 2px;
   font-size: 2.4rem;
@@ -1279,6 +1280,26 @@ body > section:nth-child(even) {
   list-style: none;
   line-height: 2;
   letter-spacing: 2px; }
+
+#skills .skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0; }
+#skills .skill-box {
+  display: table-cell; }
+  #skills .skill-box:last-child {
+    vertical-align: middle;
+    line-height: 2;
+    letter-spacing: 2px; }
+    #skills .skill-box:last-child a {
+      color: #5b2c00;
+      border-bottom: 1px dotted #5b2c00; }
+#skills .skill-image {
+  display: block;
+  width: 306px;
+  height: 306px;
+  margin: 0 auto; }
 
 /* @import 'histories'; */
 /* @import 'portfolios'; */
