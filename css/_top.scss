@@ -1,36 +1,6 @@
-.myself {
-  display: table;
-  width: 100%;
-
-  .logo {
-    width: $top-logo-width;
-
-    img {
-      background-color: $top-logo-bg;
-      border-radius: 50%;
-      display: $top-logo-display;
-      float: $top-logo-float;
-      width: 100%;
-    }
-  }
-
-  .introduction {
-    display: $top-introduction-display;
-    float: $top-introduction-float;
-    padding-left: $top-introduction-padidng;
-    text-align: $top-text-align;
-
-    a { @include link_hover; }
-    p > a { @include link_underline; }
-  }
-
-  .social {
-    width: 100%;
-
-    a {
-      display: $top-social-display;
-      font-size: $top-social-font-size;
-      width: $top-social-width;
-    }
-  }
+#top {
+  padding: 10px 12px;
+  background: url('../images/logo.gif');
+  letter-spacing: 1px;
+  font-size: 1.6rem;
 }
