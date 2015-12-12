@@ -24,6 +24,10 @@ a:link, a:visited, a:hover, a:active {
   clear: both;
 }
 
+.hidden {
+  display: none;
+}
+
 body > section {
   &:nth-child(even) {
     background-color: $body-color;
