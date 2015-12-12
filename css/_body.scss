@@ -23,3 +23,10 @@ a:link, a:visited, a:hover, a:active {
   display: block;
   clear: both;
 }
+
+body > section {
+  &:nth-child(even) {
+    background-color: $body-color;
+    color: $brown;
+  }
+}

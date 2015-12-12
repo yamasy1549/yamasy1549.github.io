@@ -1234,12 +1234,12 @@ html {
 
 body {
   background: #95aa1b;
-  color: #5b2c00;
+  color: #f7f7f7;
   font-size: 1.4rem;
   font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
 
 a:link, a:visited, a:hover, a:active {
-  color: #5b2c00;
+  color: #f7f7f7;
   text-decoration: none; }
 
 .clearfix::after {
@@ -1247,6 +1247,9 @@ a:link, a:visited, a:hover, a:active {
   display: block;
   clear: both; }
 
+body > section:nth-child(even) {
+  background-color: #f7f7f7;
+  color: #5b2c00; }
 
 .footer {
   text-align: center;
