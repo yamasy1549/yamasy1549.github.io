@@ -1,61 +1,68 @@
-.history {
-  display: table;
-  font-size: $history-font-size;
-  width: 100%;
+#histories {
+  line-height: 2;
+  letter-spacing: 2px;
 
-  a { @include link_hover; }
+  .histories-wrapper {
+    width: 500px;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
 
-  .time {
-    background-image: url(../img/historybar-circle.svg);
-    background-repeat: no-repeat;
-    background-position: right top;
-    height: $history-height;
-    line-height: $history-height;
-    width: $history-left-width;
-    display: table-cell;
-    float: left;
-    clear: both;
-    text-align: right;
-    padding-right: $history-height;
-    &:first-of-type {
-      background-image: url(../img/historybar-circle-radius.svg);
+  a {
+    color: $brown;
+    border-bottom: 1px dotted $brown;
+  }
+
+  dl {
+    display: table;
+    width: 100%;
+
+    .time {
+      max-height: 100px;
+      line-height: 50px;
+      width: 160px;
+      display: table-cell;
+      float: left;
+      clear: both;
+      text-align: right;
+      padding-right: 30px;
     }
-  }
 
-  .works {
-    line-height: $history-height;
-    display: table-cell;
-    float: left;
-    margin: 0;
-    padding-left: $history-padding-left;
+    .works {
+      background: url(../img/historybar-circle.svg) no-repeat left top,
+      url(../img/historybar-line.svg) repeat-y left top;
+      background-size: 50px 50px;
+      min-height: 100px;
+      line-height: 50px;
+      width: 340px;
+      display: table-cell;
+      float: left;
+      margin: 0;
+      padding-left: 60px;
+      position: relative;
 
-    a { @include link_underline; }
-  }
+      &:first-of-type {
+        background: url(../img/historybar-circle-radius.svg) no-repeat left top,
+        url(../img/historybar-line.svg) repeat-y left top;
+        background-size: 50px 50px;
+      }
 
-  .line {
-    background-image: url(../img/historybar-line.svg);
-    background-repeat: repeat-y;
-    background-position: right top;
-    height: $history-height;
-    line-height: $history-height;
-    width: $history-left-width;
-    display: table-cell;
-    float: left;
-    clear: both;
-    text-align: right;
-    margin: 0;
-    padding-right: $history-height;
-    &:last-of-type {
-      background-image: url(../img/historybar-line-radius.svg);
+      &:last-of-type {
+        background: url(../img/historybar-circle.svg) no-repeat left top,
+        url(../img/historybar-line-radius.svg) no-repeat left bottom;
+        background-size: 50px 50px;
+      }
+
+      .lang {
+        line-height: 50px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        float: left;
+        margin: 0;
+        opacity: 0.3;
+        font-size: 3rem;
+      }
     }
-  }
-
-  .skills {
-    @include icon_colors;
-    font-size: $history-skill-font-size;
-    line-height: $history-height / 2;
-    display: table-cell;
-    float: left;
-    padding-left: $history-padding-left;
   }
 }

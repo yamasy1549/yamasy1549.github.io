@@ -1309,7 +1309,55 @@ body > section:nth-child(even) {
     margin: 0 auto;
     padding: 100px 0; }
 
-/* @import 'histories'; */
+#histories {
+  line-height: 2;
+  letter-spacing: 2px; }
+  #histories .histories-wrapper {
+    width: 500px;
+    margin: 0 auto;
+    padding: 100px 0; }
+  #histories a {
+    color: #5b2c00;
+    border-bottom: 1px dotted #5b2c00; }
+  #histories dl {
+    display: table;
+    width: 100%; }
+    #histories dl .time {
+      max-height: 100px;
+      line-height: 50px;
+      width: 160px;
+      display: table-cell;
+      float: left;
+      clear: both;
+      text-align: right;
+      padding-right: 30px; }
+    #histories dl .works {
+      background: url(../img/historybar-circle.svg) no-repeat left top, url(../img/historybar-line.svg) repeat-y left top;
+      background-size: 50px 50px;
+      min-height: 100px;
+      line-height: 50px;
+      width: 340px;
+      display: table-cell;
+      float: left;
+      margin: 0;
+      padding-left: 60px;
+      position: relative; }
+      #histories dl .works:first-of-type {
+        background: url(../img/historybar-circle-radius.svg) no-repeat left top, url(../img/historybar-line.svg) repeat-y left top;
+        background-size: 50px 50px; }
+      #histories dl .works:last-of-type {
+        background: url(../img/historybar-circle.svg) no-repeat left top, url(../img/historybar-line-radius.svg) no-repeat left bottom;
+        background-size: 50px 50px; }
+      #histories dl .works .lang {
+        line-height: 50px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        float: left;
+        margin: 0;
+        opacity: 0.3;
+        font-size: 3rem; }
+
 /* @import 'portfolios'; */
 
 /*# sourceMappingURL=style.css.map */
