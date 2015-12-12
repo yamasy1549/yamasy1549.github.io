@@ -1,16 +1,25 @@
-html,
+html {
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: $body-bg;
+  background: $body-bg;
   color: $body-color;
-  font-family:'ヒラギノ丸ゴ Pro W4', 'Hiragino Maru Gothic ProN', 'ヒラギノ丸ゴ ProN W3', Meiryo, メイリオ, sans-serif;
-  font-size: $body-font-size;
-  margin: 0;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif
 }
 
-.wrapper {
-  margin: auto $wrapper-margin;
-
-  a { text-decoration: none; }
+a:link, a:visited, a:hover, a:active {
+  color: $body-color;
+  text-decoration: none;
 }
 
-section { margin: $section-margin auto; }
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
