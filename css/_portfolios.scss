@@ -1,41 +1,38 @@
-.portfolio {
+#portfolios {
   display: table;
-  margin: $portfolio-margin auto;
-  width: 100%;
+  line-height: 2;
+  letter-spacing: 2px;
 
-  .eyecatch {
-    background-color: $white;
-    border: 2px solid $portfolio-border-color;
-    border-radius: $portfolio-border-radius;
-    display: $portfolio-display;
-    text-align: center;
-    width: $portfolio-eyecatch-width;
+  .portfolios-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
   }
 
-  img {
-    border-top-left-radius: $portfolio-border-radius;
-    border-top-right-radius: $portfolio-border-radius;
-    width: 100%;
+  .portfolio-row {
+    margin: 40px auto;
+    clear: both;
   }
 
-  .name {
-    color: $portfolio-color;
-    display: block;
-    height: $portfolio-name-height;
-    line-height: $portfolio-name-height;
-  }
+  .portfolio-box {
+    display: table-cell;
+    float: left;
+    width: 50%;
+    padding: 0 100px;
+    margin-bottom: 40px;
 
-  .detail {
-    @include icon_colors;
-    display: $portfolio-display;
-    padding-left: $portfolio-detail-padding;
-    text-align: $portfolio-detail-text-align;
-    vertical-align: middle;
-    width: $portfolio-detail-width;
+    .portfolio-text {
+      a {
+        color: $brown;
+        border-bottom: 1px dotted $brown;
+      }
 
-    a {
-      @include link_hover;
-      @include link_underline;
+      strong {
+        font-size: 2rem;
+        line-height: 1.5;
+      }
     }
+
+    .portfolio-image { width: 100%; }
   }
 }

@@ -1358,6 +1358,30 @@ body > section:nth-child(even) {
         opacity: 0.3;
         font-size: 3rem; }
 
-/* @import 'portfolios'; */
+#portfolios {
+  display: table;
+  line-height: 2;
+  letter-spacing: 2px; }
+  #portfolios .portfolios-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0; }
+  #portfolios .portfolio-row {
+    margin: 40px auto;
+    clear: both; }
+  #portfolios .portfolio-box {
+    display: table-cell;
+    float: left;
+    width: 50%;
+    padding: 0 100px;
+    margin-bottom: 40px; }
+    #portfolios .portfolio-box .portfolio-text a {
+      color: #5b2c00;
+      border-bottom: 1px dotted #5b2c00; }
+    #portfolios .portfolio-box .portfolio-text strong {
+      font-size: 2rem;
+      line-height: 1.5; }
+    #portfolios .portfolio-box .portfolio-image {
+      width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
