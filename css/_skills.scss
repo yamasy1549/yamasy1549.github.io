@@ -27,4 +27,22 @@
     height: 306px;
     margin: 0 auto;
   }
+
+  @media (max-width: 768px) {
+    .skills-wrapper {
+      width: 80%;
+    }
+    .skill-box {
+      display: block;
+
+      &:last-child {
+        text-align: center;
+      }
+    }
+
+    .skill-image {
+      width: 80%;
+      height: 80%;
+    }
+  }
 }

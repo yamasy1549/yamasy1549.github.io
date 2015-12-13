@@ -1301,6 +1301,16 @@ body > section:nth-child(even) {
   width: 306px;
   height: 306px;
   margin: 0 auto; }
+@media (max-width: 768px) {
+  #skills .skills-wrapper {
+    width: 80%; }
+  #skills .skill-box {
+    display: block; }
+    #skills .skill-box:last-child {
+      text-align: center; }
+  #skills .skill-image {
+    width: 80%;
+    height: 80%; } }
 
 #about1, #about2 {
   line-height: 2;
@@ -1309,6 +1319,9 @@ body > section:nth-child(even) {
     width: 50%;
     margin: 0 auto;
     padding: 100px 0; }
+  @media (max-width: 768px) {
+    #about1 .about-wrapper, #about2 .about-wrapper {
+      width: 80%; } }
 
 #histories {
   line-height: 2;
@@ -1358,6 +1371,25 @@ body > section:nth-child(even) {
         margin: 0;
         opacity: 0.3;
         font-size: 3rem; }
+  @media (max-width: 768px) {
+    #histories {
+      letter-spacing: 0; }
+      #histories .histories-wrapper {
+        width: 90%; }
+      #histories dl .time {
+        line-height: 40px;
+        width: 20%;
+        padding-right: 20px; }
+      #histories dl .works {
+        background-size: 40px 40px;
+        line-height: 40px;
+        width: 80%;
+        padding-left: 40px; }
+        #histories dl .works:first-of-type {
+          background-size: 40px 40px; }
+        #histories dl .works:last-of-type {
+          background: url(../img/historybar-circle.svg) no-repeat left top, url(../img/historybar-line-radius.svg) no-repeat left bottom, url(../img/historybar-line.svg) repeat-y left bottom;
+          background-size: 40px 40px; } }
 
 #portfolios {
   display: table;
@@ -1384,5 +1416,10 @@ body > section:nth-child(even) {
       line-height: 1.5; }
     #portfolios .portfolio-box .portfolio-image {
       width: 100%; }
+  @media (max-width: 768px) {
+    #portfolios .portfolio-box {
+      display: block;
+      width: 100%;
+      padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */

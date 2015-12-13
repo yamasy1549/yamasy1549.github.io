@@ -35,4 +35,12 @@
 
     .portfolio-image { width: 100%; }
   }
+
+  @media (max-width: 768px) {
+    .portfolio-box {
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+  }
 }
