@@ -1277,15 +1277,21 @@ body > section:nth-child(even) {
     width: 80%;
     height: 80%; } }
 
-#about1, #about2 {
+#about1,
+#about2,
+#about3 {
   line-height: 2;
   letter-spacing: 2px; }
-  #about1 .about-wrapper, #about2 .about-wrapper {
+  #about1 .about-wrapper,
+  #about2 .about-wrapper,
+  #about3 .about-wrapper {
     width: 50%;
     margin: 0 auto;
     padding: 100px 0; }
   @media (max-width: 768px) {
-    #about1 .about-wrapper, #about2 .about-wrapper {
+    #about1 .about-wrapper,
+    #about2 .about-wrapper,
+    #about3 .about-wrapper {
       width: 80%; } }
 
 #histories {
@@ -1386,5 +1392,17 @@ body > section:nth-child(even) {
       display: block;
       width: 100%;
       padding: 0; } }
+
+#interviews .interviews-wrapper {
+  display: table;
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0; }
+#interviews .interview {
+  letter-spacing: 2px;
+  line-height: 2; }
+#interviews a {
+  color: #5b2c00;
+  border-bottom: 1px dotted #5b2c00; }
 
 /*# sourceMappingURL=style.css.map */
