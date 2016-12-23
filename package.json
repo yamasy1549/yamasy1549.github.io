@@ -6,7 +6,8 @@
   "author": "yamasy1549 <sanae@yamasy.info>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --progress --watch"
+    "build": "webpack --progress",
+    "start": "webpack-dev-server --inline"
   },
   "dependencies": {
     "react": "^15.4.1",
