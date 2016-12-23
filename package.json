@@ -1,0 +1,8 @@
+{
+  "name": "yamasy1549.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:yamasy1549/yamasy1549.github.io.git",
+  "author": "yamasy1549 <sanae@yamasy.info>",
+  "license": "MIT"
+}
