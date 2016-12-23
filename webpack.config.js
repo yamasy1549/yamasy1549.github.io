@@ -5,9 +5,9 @@ module.exports = {
   entry: {
     jsx: './index.jsx',
     html: './index.html',
-    css: './css/normalize.css',
+    css: glob.sync('./src/components/*.css').map(f => f.replace('./src', '.')),
     img: glob.sync('./src/img/**/*.*').map(f => f.replace('./src', '.')),
-    font: glob.sync('./src/font/**/*.*').map(f => f.replace('./src', '.')),
+    font: glob.sync('./src/font/**/*.*').map(f => f.replace('./src', '.'))
   },
   output: {
     path: __dirname + '/dist',
@@ -26,7 +26,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'file?name=[path][name].[ext]'
+        include: /src\/components/,
+        loaders: ['style?sourceMap', 'css?modules']
       },
       {
         test: /img\/(.*\/)?.*\.(gif|png|jp(e?)g|svg)$/,
