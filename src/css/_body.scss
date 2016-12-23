@@ -1,0 +1,36 @@
+html {
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: $body-bg;
+  color: $body-color;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: $body-color;
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+body > section {
+  &:nth-child(even) {
+    background-color: $body-color;
+    color: $brown;
+  }
+}

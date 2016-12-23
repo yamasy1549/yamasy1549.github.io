@@ -1,0 +1,102 @@
+#histories {
+  line-height: 2;
+  letter-spacing: 2px;
+
+  .histories-wrapper {
+    width: 500px;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+
+  a {
+    color: $brown;
+    border-bottom: 1px dotted $brown;
+  }
+
+  dl {
+    display: table;
+    width: 100%;
+
+    .time {
+      max-height: 100px;
+      line-height: 50px;
+      width: 160px;
+      display: table-cell;
+      float: left;
+      clear: both;
+      text-align: right;
+      padding-right: 30px;
+    }
+
+    .works {
+      background: url(../img/historybar-circle.svg) no-repeat left top,
+      url(../img/historybar-line.svg) repeat-y left top;
+      background-size: 50px 50px;
+      min-height: 100px;
+      line-height: 50px;
+      width: 340px;
+      display: table-cell;
+      float: left;
+      margin: 0;
+      padding-left: 60px;
+      position: relative;
+
+      &:first-of-type {
+        background: url(../img/historybar-circle-radius.svg) no-repeat left top,
+        url(../img/historybar-line.svg) repeat-y left top;
+        background-size: 50px 50px;
+      }
+
+      &:last-of-type {
+        background: url(../img/historybar-circle.svg) no-repeat left top,
+        url(../img/historybar-line-radius.svg) no-repeat left bottom;
+        background-size: 50px 50px;
+      }
+
+      .lang {
+        line-height: 50px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        float: left;
+        margin: 0;
+        opacity: 0.3;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    letter-spacing: 0;
+
+    .histories-wrapper {
+      width: 90%;
+    }
+
+    dl {
+      .time {
+        line-height: 40px;
+        width: 20%;
+        padding-right: 20px;
+      }
+
+      .works {
+        background-size: 40px 40px;
+        line-height: 40px;
+        width: 80%;
+        padding-left: 40px;
+
+        &:first-of-type {
+          background-size: 40px 40px;
+        }
+
+        &:last-of-type {
+          background: url(../img/historybar-circle.svg) no-repeat left top,
+          url(../img/historybar-line-radius.svg) no-repeat left bottom,
+          url(../img/historybar-line.svg) repeat-y left bottom;
+          background-size: 40px 40px;
+        }
+      }
+    }
+  }
+}

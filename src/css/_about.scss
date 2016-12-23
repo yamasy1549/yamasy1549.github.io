@@ -1,0 +1,18 @@
+#about1,
+#about2,
+#about3 {
+  line-height: 2;
+  letter-spacing: 2px;
+
+  .about-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+
+  @media (max-width: 768px) {
+    .about-wrapper {
+      width: 80%;
+    }
+  }
+}
