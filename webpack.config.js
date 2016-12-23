@@ -5,7 +5,7 @@ module.exports = {
   entry: {
     jsx: './index.jsx',
     html: './index.html',
-    css: './css/style.css',
+    css: './css/normalize.css',
     img: glob.sync('./src/img/**/*.*').map(f => f.replace('./src', '.')),
     font: glob.sync('./src/font/**/*.*').map(f => f.replace('./src', '.')),
   },
