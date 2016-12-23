@@ -1,16 +1,22 @@
 module.exports = {
-  entry: './src/app.jsx',
+  entry: {
+    jsx: './src/app.jsx',
+    html: './src/index.html'
+  },
   output: {
     path: './dist',
     filename: 'bundle.js'
   },
-  devtool: 'inline-source-map',
   module: {
     loaders: [
       {
         test: /\.js(x?)$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.html$/,
+        loader: 'file?name=[name].[ext]'
       }
     ]
   }
