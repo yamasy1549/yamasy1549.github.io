@@ -1,5 +1,5 @@
 .section {
-  padding: var(--space-large) calc(var(--space-large) * 1.5);
+  padding: var(--space-large) calc(var(--space-large) * 2.5);
 }
 
 .section:nth-child(even) {
