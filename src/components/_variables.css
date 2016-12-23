@@ -6,6 +6,9 @@
 
   --body-bg:                  var(--light-green);
   --body-color:               var(--light-gray);
+  --body-font-size:           1.4rem;
+
+  --media-max:                767px;
 
   --space-large:              100px;
   --space-medium:             50px;

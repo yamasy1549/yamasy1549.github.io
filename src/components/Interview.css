@@ -5,3 +5,13 @@
 .media {
   margin-left: var(--space-small);
 }
+
+@media (max-width: 767px) {
+  .interview {
+    margin-bottom: var(--space-small);
+  }
+
+  .interview:last-child {
+    margin-bottom: 0;
+  }
+}

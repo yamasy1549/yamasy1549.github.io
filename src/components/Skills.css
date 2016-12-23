@@ -15,51 +15,18 @@
   max-height: 300px;
 }
 
-#skills {
-  .skills-wrapper {
-    display: table;
-    width: 80%;
-    margin: 0 auto;
-    padding: 100px 0;
+@media (max-width: 767px) {
+  .skills {
+    flex-flow: column;
   }
 
-  .skill-box {
-    display: table-cell;
-
-    &:last-child {
-      vertical-align: middle;
-      line-height: 2;
-      letter-spacing: 2px;
-
-      a {
-        color: $brown;
-        border-bottom: 1px dotted $brown;
-      }
-    }
+  .column {
+    margin-right: 0;
   }
 
-  .skill-image {
-    display: block;
-    width: 306px;
-    height: 306px;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 768px) {
-    .skills-wrapper {
-      width: 80%;
-    }
-    .skill-box {
-      display: block;
-
-      &:last-child {
-        text-align: center;
-      }
-    }
-
-    .skill-image {
-      width: 80%;
-      height: 80%;
-    }
+  .ratio {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto calc(var(--space-small) * 2);
   }
 }

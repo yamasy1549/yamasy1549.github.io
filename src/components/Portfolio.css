@@ -35,3 +35,15 @@
 .p {
   letter-spacing: var(--paragraph-letter-spacing);
 }
+
+@media (max-width: 767px) {
+  .portfolio {
+    width: 100%;
+    margin-bottom: calc(var(--space-small) * 3);
+    margin-right: 0;
+  }
+
+  .portfolio:nth-last-child(2) {
+    margin-bottom: calc(var(--space-small) * 3);
+  }
+}

@@ -1,4 +1,11 @@
 .history {
   display: table;
   margin: 0 auto;
+  width: 70%;
+}
+
+@media (max-width: 767px) {
+  .history {
+    width: 100%;
+  }
 }

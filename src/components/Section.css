@@ -10,3 +10,9 @@
 .hidden {
   display: none;
 }
+
+@media (max-width: 767px) {
+  .section {
+    padding: var(--space-medium) calc(var(--space-small) * 1.5);
+  }
+}
