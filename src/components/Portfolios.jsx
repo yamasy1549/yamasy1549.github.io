@@ -1,6 +1,7 @@
 import React from 'react'
 
-import Section from './Section.jsx'
+import Section   from './Section.jsx'
+import Portfolio from './Portfolio.jsx'
 
 export default () => (
   <Section id='portfolios'>
@@ -61,25 +62,3 @@ export default () => (
     </ul>
   </Section>
 )
-
-class Portfolio extends React.Component {
-  constructor(props) { super(props) }
-
-  render() {
-    return (
-      <li className='portfolio-box'>
-        <a href={this.props.url}>
-          <img
-             className='portfolio-image'
-             src={'img/' + this.props.img}
-             alt={this.props.title}
-          />
-        </a>
-        <div className='portfolio-description'>
-          <h3>{this.props.title}</h3>
-          <p>{this.props.children}</p>
-        </div>
-      </li>
-    )
-  }
-}

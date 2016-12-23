@@ -1,6 +1,7 @@
 import React from 'react'
 
-import Section from './Section.jsx'
+import Section   from './Section.jsx'
+import Interview from './Interview.jsx'
 
 export default () => (
   <Section id='interviews'>
@@ -26,15 +27,3 @@ export default () => (
     </ul>
   </Section>
 )
-
-class Interview extends React.Component {
-  constructor(props) { super(props) }
-
-  render() {
-    return (
-      <li className='interview'>
-        <a href={this.props.url}>{this.props.children}</a> - {this.props.media}
-      </li>
-    )
-  }
-}

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Section from './Section.jsx'
+import Event   from './Event.jsx'
 
 export default () => (
   <Section id='histories'>
@@ -43,27 +44,3 @@ export default () => (
     </ul>
   </Section>
 )
-
-class Event extends React.Component {
-  constructor(props) { super(props) }
-
-  render() {
-    const icons = this.props.icons.map((icon, i) => {
-      return (
-        <i className={'icon-' + icon} key={i} />
-      )
-    })
-
-    return (
-      <li>
-        <span className='time'>{this.props.time}</span>
-        <div className='works'>
-          {this.props.children}
-          <div className='lang'>
-            {icons}
-          </div>
-        </div>
-      </li>
-    )
-  }
-}

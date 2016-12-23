@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Section from './Section.jsx'
+import Skill   from './Skill.jsx'
 
 export default () => (
   <Section id='skills'>
@@ -30,13 +31,3 @@ export default () => (
     </div>
   </Section>
 )
-
-class Skill extends React.Component {
-  constructor(props) { super(props) }
-
-  render() {
-    return (
-      <li>{this.props.children}</li>
-    )
-  }
-}

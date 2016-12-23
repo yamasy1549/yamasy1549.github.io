@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Section from './Section.jsx'
+import SNS     from './SNS.jsx'
 
 export default () => (
   <Section id='heading'>
@@ -25,18 +26,3 @@ export default () => (
     </ul>
   </Section>
 )
-
-class SNS extends React.Component {
-  constructor(props) { super(props) }
-
-  render() {
-    return (
-      <li>
-        <a href={this.props.url}>
-          <i className={'fa fa-fw fa-' + this.props.icon} />
-          {this.props.children}
-        </a>
-      </li>
-    )
-  }
-}
