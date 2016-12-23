@@ -1,0 +1,6 @@
+.skill {
+  display: inline-block;
+  background-color: var(--gray);
+  margin: calc(var(--space-small) / 2);
+  padding: calc(var(--space-small) / 2) var(--space-small);
+}

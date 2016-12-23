@@ -1,16 +1,18 @@
 import React from 'react'
 
+import styles from './Event.css'
+
 export default ({ time, icons, children }) => {
   let langIcons = icons.map((icon, i) => (
     <i className={'icon-' + icon} key={i} />
   ))
 
   return (
-    <li>
-      <span className='time'>{time}</span>
-      <div className='works'>
+    <li className={styles.event}>
+      <time className={styles.time}>{time}</time>
+      <div className={styles.work}>
         {children}
-        <div className='lang'>
+        <div className={styles.lang}>
           {langIcons}
         </div>
       </div>

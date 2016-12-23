@@ -1,0 +1,4 @@
+.content {
+  letter-spacing: var(--paragraph-letter-spacing);
+  text-align: center;
+}

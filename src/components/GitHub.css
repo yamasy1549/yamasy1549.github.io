@@ -1,0 +1,4 @@
+.github {
+  display: block;
+  margin-bottom: calc(var(--space-small) / 2);
+}

@@ -1,7 +1,9 @@
 import React from 'react'
 
+import styles from './Footer.css'
+
 export default () => (
-  <footer className='footer'>
-    <i className='fa fa-copyright' /> 2016 <a href='//yamasy.info'>yamasy1549</a>
+  <footer className={styles.footer}>
+    <i className='fa fa-copyright' /> 2016 <a href='//yamasy.info' className={styles.a}>yamasy1549</a>
   </footer>
 )

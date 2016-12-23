@@ -2,33 +2,35 @@ import React from 'react'
 
 import Section   from './Section.jsx'
 import Portfolio from './Portfolio.jsx'
+import GitHub    from './GitHub.jsx'
+import styles    from './Portfolios.css'
 
 export default () => (
   <Section id='portfolios'>
-    <ul>
+    <ul className={styles.portfolios}>
       <Portfolio title='actif-quest' url='//play.google.com/store/apps/details?id=info.actfesta.android.actifquest&hl=ja' img='actifquest.svg'>
-        <a href='//github.com/anct/actif-quest'><i className='fa fa-github-alt'></i> actif-quest</a><br />
+        <GitHub project='actif-quest' url='//github.com/anct/actif-quest' />
         明石高専祭を楽しくするスマートフォンアプリ。
         Railsでバックエンドのお手伝いをさせてもらいました。
       </Portfolio>
 
       <Portfolio title='MAEMUKI' url='' img='maemuki.png'>
-        <a href='//github.com/BASASI/maemuki'><i className='fa fa-github-alt'></i> maemuki</a><br />
+        <GitHub project='maemuki' url='//github.com/BASASI/maemuki' />
         Twitterでのネガポジ度を判定するWebアプリ。
         Railsでのバックエンド一部と、viewを担当しました。<br />
         MA10大阪一次予選ハッカソン 最優秀賞
       </Portfolio>
 
       <Portfolio title='ruboty-pux' url='//www.slideshare.net/yamasy1549s/ruboty' img='ruboty-pux.png'>
-        <a href='//github.com/yamasy1549/ruboty-pux'><i className='fa fa-github-alt'></i> ruboty-pux</a><br />
+        <GitHub project='ruboty-pux' url='//github.com/yamasy1549/ruboty-pux' />
         <a href='//pds.polestars.jp/'>PUX 顔検出API</a>を使った<a href='//github.com/r7kamura/ruboty'>ruboty</a>のプラグイン。
         Slackなどでrubotyに画像を投げると、写っている人の年齢・性別・ドヤ顔度・似ている動物などを返してくれる、初gem。
       </Portfolio>
 
       <Portfolio title='明石高専 学生会執行部Webサイト' url='//nitac-gakuseikai.herokuapp.com' img='nitac-gakuseikai.png'>
-        <a href='//github.com/yamasy1549/nitac-gakuseikai'><i className='fa fa-github-alt'></i> nitac-gakuseikai</a><br />
+        <GitHub project='nitac-gakuseikai' url='//github.com/yamasy1549/nitac-gakuseikai' />
         学生会Webサイトのリニューアルを担当しました。
-        シンプルにしようと思ったらお葬式みたいな色になってしまった。
+        シンプルにしようと思ったらお葬式みたいな色になってしまった…
       </Portfolio>
 
       <Portfolio title='LIFECODE BATTLER' url='' img='lifecodebattler.png'>

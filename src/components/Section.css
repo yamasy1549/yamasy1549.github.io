@@ -1,0 +1,12 @@
+.section {
+  padding: var(--space-large) calc(var(--space-large) * 1.5);
+}
+
+.section:nth-child(even) {
+  background-color: var(--body-color);
+  color: var(--brown);
+}
+
+.hidden {
+  display: none;
+}

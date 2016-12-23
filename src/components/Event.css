@@ -1,0 +1,29 @@
+.event {
+  display: flex;
+}
+
+.event > * {
+  height: 100px;
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height: 50px;
+}
+
+.time {
+  width: 70px;
+}
+
+.work {
+  background: url('../img/historybar-circle.svg') no-repeat left top,
+              url('../img/historybar-line.svg') repeat-y left top;
+  background-size: 50px 50px;
+  padding-left: 60px;
+  width: 340px;
+}
+
+.lang {
+  line-height: 1;
+  text-align: right;
+  font-size: calc(var(--striking-font-size) * 1.3);
+  color: var(--brown);
+  opacity: 0.3;
+}

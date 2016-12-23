@@ -1,0 +1,19 @@
+:root {
+  --light-green:              #95aa1b;
+  --light-gray:               #f7f7f7;
+  --gray:                     #eeeeee;
+  --brown:                    #5b2c00;
+
+  --body-bg:                  var(--light-green);
+  --body-color:               var(--light-gray);
+
+  --space-large:              100px;
+  --space-medium:             50px;
+  --space-small:              10px;
+
+  --striking-font-size:       2.4rem;
+  --striking-line-height:     2;
+  --striking-letter-spacing:  2px;
+
+  --paragraph-letter-spacing: 1px;
+}

@@ -1,0 +1,23 @@
+.heading {
+  letter-spacing: var(--striking-letter-spacing);
+  font-size: var(--striking-font-size);
+  text-align: center;
+  margin-bottom: var(--space-medium);
+}
+
+.logo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto calc(var(--space-small) * 3);
+}
+
+.dot {
+  color: var(--brown);
+}
+
+.snsList {
+  display: flex;
+  justify-content: center;
+}

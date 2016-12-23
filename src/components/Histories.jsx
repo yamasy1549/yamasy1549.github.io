@@ -2,10 +2,11 @@ import React from 'react'
 
 import Section from './Section.jsx'
 import Event   from './Event.jsx'
+import styles  from './Histories.css'
 
 export default () => (
   <Section id='histories'>
-    <ul>
+    <ul className={styles.history}>
       <Event time='2014/04' icons={[]}>
         明石高専 電気情報工学科入学
       </Event>

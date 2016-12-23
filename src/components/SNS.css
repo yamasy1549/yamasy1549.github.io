@@ -1,0 +1,20 @@
+.li {
+  margin-right: var(--space-small);
+}
+
+.li:last-child {
+  margin-right: 0;
+}
+
+.a:link,
+.a:visited,
+.a:hover,
+.a:active {
+  display: inline-block;
+  color: var(--body-color);
+  border-bottom: 0;
+}
+
+.icon {
+  font-size: var(--striking-font-size);
+}

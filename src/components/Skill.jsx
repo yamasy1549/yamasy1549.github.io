@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from './Skill.css'
+
 export default ({ children }) => (
-  <li>{children}</li>
+  <li className={styles.skill}>{children}</li>
 )

@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default ({ url, icon, children }) => (
-  <li>
-    <a href={url}>
-      <i className={'fa fa-fw fa-' + icon} />
-      {children}
+import styles from './SNS.css'
+
+export default ({ url, icon }) => (
+  <li className={styles.li}>
+    <a href={url} className={styles.a}>
+      <i className={'fa fa-fw fa-' + icon + ' ' + styles.icon} />
     </a>
   </li>
 )

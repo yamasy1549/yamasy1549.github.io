@@ -1,0 +1,41 @@
+@import './normalize.css';
+@import './_pictonic.css';
+@import './_variables.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--body-bg);
+  color: var(--body-color);
+  font-size: 1.4rem;
+  font-family: Raleway, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif
+}
+
+a:link,
+a:visited {
+  color: var(--brown);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--brown);
+}
+
+a:hover,
+a:active {
+  border-bottom: 1px solid var(--brown);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}

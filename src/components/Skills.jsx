@@ -2,28 +2,26 @@ import React from 'react'
 
 import Section from './Section.jsx'
 import Skill   from './Skill.jsx'
+import styles  from './Skills.css'
 
 export default () => (
   <Section id='skills'>
-    <div className='skill-box'>
+    <div className={styles.skills}>
       <img
-        className='skill-image'
+        className={styles.column + ' ' + styles.ratio}
         src='img/skill-ratio.png'
         alt='skill-ratio'
       />
-    </div>
-    <div className='skill-box'>
-      <p>
-        <a href='http://www.akashi.ac.jp'>NIT, Akashi College</a> 3rd grade
-        <br />
-        <a href='http://codeforkosen.org'>Code for KOSEN</a>
-      </p>
-      <ul>
+      <ul className={styles.column}>
+        <Skill><a href='//www.akashi.ac.jp'>NIT, Akashi College</a> 3rd grade</Skill>
+        <Skill><a href='//codeforkosen.org'>Code for KOSEN</a></Skill>
+        <Skill><a href='//kosen14s.github.io'>kosen14s</a></Skill>
         <Skill>Ruby</Skill>
         <Skill>Rails</Skill>
         <Skill>React</Skill>
         <Skill>HTML</Skill>
         <Skill>CSS</Skill>
+        <Skill>Design</Skill>
         <Skill>Adobe Illustrator</Skill>
         <Skill>応用情報技術者試験</Skill>
         <Skill>第3級アマチュア無線技士</Skill>

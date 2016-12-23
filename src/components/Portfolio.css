@@ -1,0 +1,37 @@
+.portfolio {
+  width: calc(50% - var(--space-large) / 2);
+  margin-right: var(--space-large);
+  margin-bottom: var(--space-medium);
+}
+
+.a:link,
+.a:visited,
+.a:hover,
+.a:active {
+  display: inline-block;
+  width: 100%;
+  border: 0;
+}
+
+.portfolio:nth-child(even) {
+  margin-right: 0;
+}
+
+.portfolio:nth-last-child(2),
+.portfolio:last-child {
+  margin-bottom: 0;
+}
+
+.description {
+  margin: var(--space-small) 0;
+}
+
+.title {
+  font-size: 2.2rem;
+  letter-spacing: var(--striking-letter-spacing);
+  margin-bottom: var(--space-small);
+}
+
+.p {
+  letter-spacing: var(--paragraph-letter-spacing);
+}
