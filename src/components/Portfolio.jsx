@@ -9,7 +9,7 @@ export default ({ title, url, img, children }) => {
       <a href={url} className={styles.a}>
         <img
            className='portfolio-image'
-           src={'img/' + img}
+           src={img}
            alt={title}
         />
       </a>
@@ -17,7 +17,7 @@ export default ({ title, url, img, children }) => {
     portfolioImg =
       <img
          className='portfolio-image'
-         src={'img/' + img}
+         src={img}
          alt={title}
       />
   }

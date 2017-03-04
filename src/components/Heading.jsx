@@ -2,14 +2,16 @@ import React from 'react'
 
 import Section from './Section.jsx'
 import SNS     from './SNS.jsx'
+
 import styles  from './Heading.css'
+import logoImg from '../img/logo.png'
 
 export default () => (
   <Section id='heading'>
     <h1 className={styles.heading}>
       <img
         className={styles.logo}
-        src='img/logo.png'
+        src={logoImg}
         alt='やましーのアイコン'
       />
       yamasy<span className={styles.dot}>.</span>info

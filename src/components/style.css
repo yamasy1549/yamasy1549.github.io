@@ -1,7 +1,3 @@
-@import './normalize.css';
-@import './_pictonic.css';
-@import './_variables.css';
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;

@@ -2,14 +2,16 @@ import React from 'react'
 
 import Section from './Section.jsx'
 import Skill   from './Skill.jsx'
+
 import styles  from './Skills.css'
+import skillImg from '../img/skill-ratio.png'
 
 export default () => (
   <Section id='skills'>
     <div className={styles.skills}>
       <img
         className={styles.column + ' ' + styles.ratio}
-        src='img/skill-ratio.png'
+        src={skillImg}
         alt='skill-ratio'
       />
       <ul className={styles.column}>

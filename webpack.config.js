@@ -1,41 +1,42 @@
-const glob = require('glob')
-
 module.exports = {
-  context: __dirname + '/src',
-  entry: {
-    jsx: './index.jsx',
-    html: './index.html',
-    css: glob.sync('./src/components/*.css').map(f => f.replace('./src', '.')),
-    img: glob.sync('./src/img/**/*.*').map(f => f.replace('./src', '.')),
-    font: glob.sync('./src/font/**/*.*').map(f => f.replace('./src', '.'))
-  },
+  entry: './src/index.jsx',
   output: {
-    path: __dirname + '/dist',
+    path: '/',
     filename: 'index.js'
   },
+  devtool: '#source-map',
+  devServer: {
+    contentBase: './',
+    inline: true
+  },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.js(x?)$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel'
-      },
-      {
-        test: /\.html$/,
-        loader: 'file?name=[name].[ext]'
+        use: { loader: 'babel-loader', options: { presets: 'es2015' } }
       },
       {
         test: /\.css$/,
-        include: /src\/components/,
-        loaders: ['style?sourceMap', 'css?modules']
+        exclude: /node_modules/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader', options: { modules: true } },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: function() {
+                return [
+                  require('autoprefixer')
+                ]
+              }
+            }
+          }
+        ]
       },
       {
-        test: /img\/(.*\/)?.*\.(gif|png|jp(e?)g|svg)$/,
-        loaders: ['file?name=[path][name].[ext]', 'img?minimize']
-      },
-      {
-        test: /font\/.*\.(eot|otf|ttf|woff(2?)|svg(z?))$/,
-        loader: 'file?name=[path][name].[ext]'
+        test: /\.(jpe?g|png|gif|svg|eot|ttf|woff)$/,
+        use: { loader: 'file-loader' }
       }
     ]
   }

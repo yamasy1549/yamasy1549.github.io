@@ -10,6 +10,11 @@ import About3     from './About3.jsx'
 import Interviews from './Interviews.jsx'
 import Footer     from './Footer.jsx'
 
+import normalize  from './normalize.css'
+import pictonic   from './pictonic.css'
+import variables  from './variables.css'
+import style      from './style.css'
+
 export default () => (
   <div>
     <Heading />
