@@ -1,7 +1,7 @@
 module.exports = {
   entry: './src/index.jsx',
   output: {
-    path: '/',
+    path: '',
     filename: 'index.js'
   },
   devtool: '#source-map',
@@ -36,7 +36,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|svg|eot|ttf|woff)$/,
-        use: { loader: 'file-loader' }
+        use: { loader: 'file-loader', options: { name: 'img/[name].[ext]' } }
       }
     ]
   }
