@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Section from './Section.jsx'
-// import Event   from './Event.jsx'
-import styles  from './Histories.css'
+import Section  from './Section.jsx'
+import styles   from './Histories.css'
+import pictonic from './pictonic.css'
 
 const Event = ({ time, icons, children }) => {
-  let langIcons = icons.map((icon, i) => (
-    <i className={'icon-' + icon} key={i} />
+  const langIcons = icons.map((icon, i) => (
+    <i className={`${pictonic.pictonic} ${pictonic[`icon-${icon}`]}`} key={i} />
   ))
 
   return (
