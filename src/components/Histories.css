@@ -4,8 +4,70 @@
   width: 70%;
 }
 
+.event {
+  display: flex;
+}
+
+.event > * {
+  height: 100px;
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height: 50px;
+}
+
+.time {
+  width: 70px;
+}
+
+.work {
+  background: url('../img/historybar-circle.svg') no-repeat left top,
+              url('../img/historybar-line.svg') repeat-y left top;
+  background-size: 50px 50px;
+  padding-left: 60px;
+  width: calc(100% - 70px);
+  position: relative;
+}
+
+.event:first-child .work {
+  background: url('../img/historybar-circle-radius.svg') no-repeat left top,
+              url('../img/historybar-line.svg') repeat-y left top;
+  background-size: 50px 50px;
+}
+
+.event:last-child .work {
+  background: url('../img/historybar-circle.svg') no-repeat left top,
+              url('../img/historybar-line-radius.svg') repeat-y left top;
+  background-size: 50px 50px;
+}
+
+.lang {
+  line-height: 1;
+  font-size: calc(var(--striking-font-size) * 1.3);
+  color: var(--brown);
+  opacity: 0.3;
+  position: absolute;
+  right: var(--space-small);
+  bottom: var(--space-small);
+}
+
 @media (max-width: 767px) {
   .history {
     width: 100%;
+  }
+
+  .event > * {
+    height: 80px;
+    font-size: calc(var(--body-font-size) * 0.85);
+    line-height: 40px;
+  }
+
+  .time {
+    width: 55px;
+  }
+
+  .work {
+    background-size: 40px 40px;
+    padding-left: 40px;
+    word-wrap: break-word;
+    width: calc(100% - 55px);
   }
 }

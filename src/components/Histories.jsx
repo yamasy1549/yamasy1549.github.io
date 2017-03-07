@@ -1,8 +1,26 @@
 import React from 'react'
 
 import Section from './Section.jsx'
-import Event   from './Event.jsx'
+// import Event   from './Event.jsx'
 import styles  from './Histories.css'
+
+const Event = ({ time, icons, children }) => {
+  let langIcons = icons.map((icon, i) => (
+    <i className={'icon-' + icon} key={i} />
+  ))
+
+  return (
+    <li className={styles.event}>
+      <time className={styles.time}>{time}</time>
+      <div className={styles.work}>
+        {children}
+        <div className={styles.lang}>
+          {langIcons}
+        </div>
+      </div>
+    </li>
+  )
+}
 
 export default () => (
   <Section id='histories'>
