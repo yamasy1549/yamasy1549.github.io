@@ -15,6 +15,7 @@ import senseiportalImg    from '../img/senseiportal.png'
 import tmixImg            from '../img/tmix.png'
 import kosenconfImg       from '../img/kosenconf.png'
 import coloralbumImg      from '../img/color-album.png'
+import canyoureadImg      from '../img/canyouread.png'
 
 export default () => (
   <Section id='portfolios'>
@@ -27,7 +28,6 @@ export default () => (
         明石高専祭を楽しくするスマートフォンアプリ。
         Railsでバックエンドのお手伝いをさせてもらいました。
       </Portfolio>
-
 
       <Portfolio
         title='MAEMUKI'
@@ -50,13 +50,12 @@ export default () => (
 
       <Portfolio
         title='明石高専 学生会執行部Webサイト'
-        url='//nitac-gakuseikai.herokuapp.com'
+        url=''
         img={gakuseikaiImg}>
         <GitHub project='nitac-gakuseikai' url='//github.com/yamasy1549/nitac-gakuseikai' />
         学生会Webサイトのリニューアルを担当しました。
         シンプルにしようと思ったらお葬式みたいな色になってしまった…
       </Portfolio>
-
 
       <Portfolio
         title='LIFECODE BATTLER'
@@ -66,7 +65,6 @@ export default () => (
         主にデザインを担当しました。
       </Portfolio>
 
-
       <Portfolio
         title='SENSEI NOTE'
         url='//senseinote.jp'
@@ -74,7 +72,6 @@ export default () => (
         全国の先生がつながる 小中高の先生向けのSNS。
         <a href='//lo-upe.com'>株式会社LOUPE</a>の運営しているサービスです。
       </Portfolio>
-
 
       <Portfolio
         title='SENSEI PORTAL'
@@ -84,7 +81,6 @@ export default () => (
         <a href='//lo-upe.com'>株式会社LOUPE</a>の運営しているサービスです。
       </Portfolio>
 
-
       <Portfolio
         title='TMIX'
         url='//tmix.jp'
@@ -93,7 +89,6 @@ export default () => (
         <a href='spicelife.jp'>株式会社 spice life</a>の運営しているサービスです。
       </Portfolio>
 
-
       <Portfolio
         title='高専カンファレンスlol'
         url='//kosenconf.me'
@@ -101,13 +96,19 @@ export default () => (
         全国から現役高専生や卒業生達が集まるイベント、高専カンファレンスlolのWebサイトとカンファレンスのデザインを担当しました。
       </Portfolio>
 
-
       <Portfolio
         title='color-album'
         url='//color-album.herokuapp.com'
         img={coloralbumImg}>
         写真を投稿すると自動で色をタグ付けしてくれます。製作中です。<br />
         <a href='//twitter.com/Project_FUNA/status/775293511826485249'>Project FUNA RoRコンテスト</a> 最優秀賞
+      </Portfolio>
+
+      <Portfolio
+        title='難読漢字くいず'
+        url='//yamasy.info/can-you-read'
+        img={canyoureadImg}>
+        たてよこWebアワード応募作品。デザインのできる友達に手伝ってもらいました。縦書きって難しいですね。
       </Portfolio>
     </ul>
   </Section>
