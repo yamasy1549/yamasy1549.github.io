@@ -70,4 +70,12 @@
     word-wrap: break-word;
     width: calc(100% - 55px);
   }
+
+  .event:first-child .work {
+    background-size: 40px 40px;
+  }
+
+  .event:last-child .work {
+    background-size: 40px 40px;
+  }
 }
