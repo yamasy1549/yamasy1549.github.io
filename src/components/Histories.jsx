@@ -57,11 +57,11 @@ export default () => (
         <a href='http://spicelife.jp'>spice life</a> エンジニアアルバイト
       </Event>
 
-      <Event time='2016/08~' icons={['prog-rails', 'html5-01', 'css3-01']}>
+      <Event time='2016/08~' icons={['prog-js01', 'html5-01', 'css3-01', 'prog-rails']}>
         <a href='https://www.animatelab.com/'>アニメイトラボ</a> エンジニアアルバイト
       </Event>
 
-      <Event time='2017/03~' icons={['html5-01', 'css3-01']}>
+      <Event time='2017/03~' icons={['prog-js01', 'html5-01', 'css3-01']}>
         <a href='http://corp.moneyforward.com/'>マネーフォワード</a> エンジニアインターン
       </Event>
     </ul>
