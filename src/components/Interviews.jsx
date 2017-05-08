@@ -7,8 +7,8 @@ import styles    from './Interviews.css'
 export default () => (
   <Section id='interviews'>
     <ul className={styles.interviews}>
-      <Interview media='CNET Japan' url='//japan.cnet.com/news/business/35075265/'>
-        初心者から参加できるGitHub習得イベント「GitHub Patchwork」が神戸で開催
+      <Interview media='マウスコンピューター' url='//www.mouse-jp.co.jp/wdlc/mfpc_201704/interview02/'>
+        自分が使いたいもの、誰かが喜んでくれるものをつくりたい - Hello, Girls! プログラミングとの出会いが未来を変える
       </Interview>
       <Interview media='@type' url='//type.jp/et/feature/1157'>
         17歳、兵庫のRails女子高専生が東京のベンチャーで働いて知った「プログラミングの意味」
@@ -24,6 +24,9 @@ export default () => (
       </Interview>
       <Interview media='瓦版' url='//w-kawara.jp/newest-workstyle/20160420'>
         17歳の女子高専生プログラマーがIT企業でバイトして感じたこと
+      </Interview>
+      <Interview media='CNET Japan' url='//japan.cnet.com/news/business/35075265/'>
+        初心者から参加できるGitHub習得イベント「GitHub Patchwork」が神戸で開催
       </Interview>
     </ul>
   </Section>

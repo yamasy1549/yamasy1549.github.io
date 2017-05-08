@@ -10435,8 +10435,8 @@ exports.default = function () {
       { className: _Interviews2.default.interviews },
       _react2.default.createElement(
         _Interview2.default,
-        { media: 'CNET Japan', url: '//japan.cnet.com/news/business/35075265/' },
-        '\u521D\u5FC3\u8005\u304B\u3089\u53C2\u52A0\u3067\u304D\u308BGitHub\u7FD2\u5F97\u30A4\u30D9\u30F3\u30C8\u300CGitHub Patchwork\u300D\u304C\u795E\u6238\u3067\u958B\u50AC'
+        { media: '\u30DE\u30A6\u30B9\u30B3\u30F3\u30D4\u30E5\u30FC\u30BF\u30FC', url: '//www.mouse-jp.co.jp/wdlc/mfpc_201704/interview02/' },
+        '\u81EA\u5206\u304C\u4F7F\u3044\u305F\u3044\u3082\u306E\u3001\u8AB0\u304B\u304C\u559C\u3093\u3067\u304F\u308C\u308B\u3082\u306E\u3092\u3064\u304F\u308A\u305F\u3044 - Hello, Girls! \u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u3068\u306E\u51FA\u4F1A\u3044\u304C\u672A\u6765\u3092\u5909\u3048\u308B'
       ),
       _react2.default.createElement(
         _Interview2.default,
@@ -10462,6 +10462,11 @@ exports.default = function () {
         _Interview2.default,
         { media: '\u74E6\u7248', url: '//w-kawara.jp/newest-workstyle/20160420' },
         '17\u6B73\u306E\u5973\u5B50\u9AD8\u5C02\u751F\u30D7\u30ED\u30B0\u30E9\u30DE\u30FC\u304CIT\u4F01\u696D\u3067\u30D0\u30A4\u30C8\u3057\u3066\u611F\u3058\u305F\u3053\u3068'
+      ),
+      _react2.default.createElement(
+        _Interview2.default,
+        { media: 'CNET Japan', url: '//japan.cnet.com/news/business/35075265/' },
+        '\u521D\u5FC3\u8005\u304B\u3089\u53C2\u52A0\u3067\u304D\u308BGitHub\u7FD2\u5F97\u30A4\u30D9\u30F3\u30C8\u300CGitHub Patchwork\u300D\u304C\u795E\u6238\u3067\u958B\u50AC'
       )
     )
   );
