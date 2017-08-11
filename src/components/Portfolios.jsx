@@ -17,6 +17,7 @@ import kosenconfImg       from '../img/kosenconf.png'
 import coloralbumImg      from '../img/color-album.png'
 import canyoureadImg      from '../img/canyouread.png'
 import kosen14sImg        from '../img/kosen14s.png'
+import fulltanImg         from '../img/fulltan.png'
 
 export default () => (
   <Section id='portfolios'>
@@ -118,6 +119,13 @@ export default () => (
         img={kosen14sImg}>
         Kosen14sという2014年度高専入学者の集まりでBOT作ったりドキュメントを翻訳したりしています。<br />
         <a href='//github.com/kosen14s/emoji_uploader'>emoji_uploader</a>（Slackに画像を投げたら勝手にemojiにしてくれるやつ）が便利でお気に入りです。
+      </Portfolio>
+
+      <Portfolio
+        title='fulltan'
+        url='//yamasy.info/fulltan'
+        img={fulltanImg}>
+        明石高専本科生のための簡易単位チェックツール。
       </Portfolio>
     </ul>
   </Section>
