@@ -6,7 +6,7 @@
   "author": "yamasy1549 <sanae@yamasy.info>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --progress",
+    "build": "webpack --progress --optimize-minimize",
     "start": "webpack-dev-server --inline"
   },
   "dependencies": {
