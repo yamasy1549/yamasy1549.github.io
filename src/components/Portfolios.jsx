@@ -18,6 +18,8 @@ import coloralbumImg      from '../img/color-album.png'
 import canyoureadImg      from '../img/canyouread.png'
 import kosen14sImg        from '../img/kosen14s.png'
 import fulltanImg         from '../img/fulltan.png'
+import prokarutaImg       from '../img/prokaruta.png'
+import gitkarutaImg       from '../img/gitkaruta.png'
 
 export default () => (
   <Section id='portfolios'>
@@ -126,6 +128,20 @@ export default () => (
         url='//yamasy.info/fulltan'
         img={fulltanImg}>
         明石高専本科生のための簡易単位チェックツール。
+      </Portfolio>
+
+      <Portfolio
+        title='プログラミング言語かるた'
+        url='//yamasy.info/programming-karuta'
+        img={prokarutaImg}>
+        クラウドファンディング企画、かるた本体のデザインやWebサイトのコーディングなどをしました。
+      </Portfolio>
+
+      <Portfolio
+        title='Gitコマンドかるた'
+        url='//whiims.github.io/git-karuta.html'
+        img={gitkarutaImg}>
+        Gitのコマンドをかるたにする試み。BOOTHにて予約受付中です。
       </Portfolio>
     </ul>
   </Section>
