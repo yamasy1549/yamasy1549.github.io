@@ -20,6 +20,8 @@ import kosen14sImg        from '../img/kosen14s.png'
 import fulltanImg         from '../img/fulltan.png'
 import prokarutaImg       from '../img/prokaruta.png'
 import gitkarutaImg       from '../img/gitkaruta.png'
+import resikarutaImg      from '../img/resikaruta.png'
+import vivliostyleImg     from '../img/vivliostyle.png'
 
 export default () => (
   <Section id='portfolios'>
@@ -141,7 +143,21 @@ export default () => (
         title='Gitコマンドかるた'
         url='//whiims.github.io/git-karuta.html'
         img={gitkarutaImg}>
-        Gitのコマンドをかるたにする試み。BOOTHにて予約受付中です。
+        プログラミング言語かるた第二弾。Gitのコマンドをかるたで楽しく学習しよう！
+      </Portfolio>
+
+      <Portfolio
+        title='抵抗カラーコードかるた'
+        url='//whiims.github.io/resi-karuta.html'
+        img={resikarutaImg}>
+        かるた第三弾。抵抗器のカラーコード表記をかるたで楽しく覚えよう！
+      </Portfolio>
+
+      <Portfolio
+        title='Vivliostyle 公式サイト'
+        url='//vivliostyle.org/ja'
+        img={vivliostyleImg}>
+        デザインとコーディングをしました。
       </Portfolio>
     </ul>
   </Section>

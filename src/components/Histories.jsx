@@ -72,6 +72,10 @@ export default () => (
       <Event time='2017/08~' icons={['prog-js01', 'html5-01', 'css3-01', 'prog-rails']}>
         <a href='https://www.opt.ne.jp/opttechnologies/'>オプト</a> エンジニアインターン
       </Event>
+
+      <Event time='2019/08~' icons={['prog-python', 'prog-ruby']}>
+        <a href='http://www.research.ibm.com/labs/tokyo/'>IBM Research Tokyo</a> 研究インターン
+      </Event>
     </ul>
   </Section>
 )
