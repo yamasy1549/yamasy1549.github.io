@@ -73,7 +73,7 @@ export default () => (
 
       <Portfolio
         title='SENSEI NOTE'
-        url='//senseinote.jp'
+        url='//senseinote.com'
         img={senseinoteImg}>
         全国の先生がつながる 小中高の先生向けのSNS。
         <a href='//lo-upe.com'>株式会社LOUPE</a>の運営しているサービスです。
