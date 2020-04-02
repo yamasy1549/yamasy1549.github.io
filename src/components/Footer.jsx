@@ -4,6 +4,6 @@ import styles from './Footer.css'
 
 export default () => (
   <footer className={styles.footer}>
-    <i className='fa fa-copyright' /> 2016 <a href='//yamasy.info' className={styles.a}>yamasy1549</a>
+    <i className='fa fa-copyright' /> 2020 <a href='//yamasy.info' className={styles.a}>yamasy1549</a>
   </footer>
 )

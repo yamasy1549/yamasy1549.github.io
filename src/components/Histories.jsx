@@ -37,18 +37,6 @@ export default () => (
         <a href='http://lo-upe.com'>LOUPE</a>にてインターン開始
       </Event>
 
-      <Event time='2015/06' icons={['prog-rails']}>
-        <a href='http://railsgirls.com/osaka'>RailsGirls OSAKA #2</a> コーチ
-      </Event>
-
-      <Event time='2015/09' icons={['prog-rails']}>
-        <a href='http://railsgirls.com/kobe'>RailsGirls KOBE #1</a> コーチ
-      </Event>
-
-      <Event time='2015/12' icons={['prog-rails']}>
-        <a href='http://railsgirls.com/okayama2015'>RailsGirls OKAYAMA #1</a> コーチ
-      </Event>
-
       <Event time='2016/01~' icons={['html5-01', 'css3-01']}>
         <a href='http://kosenconf.me'>高専カンファレンス</a> デザイナー
       </Event>
@@ -71,6 +59,14 @@ export default () => (
 
       <Event time='2017/08~' icons={['prog-js01', 'html5-01', 'css3-01', 'prog-rails']}>
         <a href='https://www.opt.ne.jp/opttechnologies/'>オプト</a> エンジニアインターン
+      </Event>
+      <Event time='2019/04' icons={[]}>
+        明石高専 機械・電子システム工学専攻入学
+      </Event>
+
+
+      <Event time='2019/08~' icons={['prog-python', 'prog-ruby']}>
+        <a href='http://www.research.ibm.com/labs/tokyo/'>IBM Research Tokyo</a> 研究インターン
       </Event>
     </ul>
   </Section>

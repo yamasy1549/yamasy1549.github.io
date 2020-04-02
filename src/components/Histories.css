@@ -49,6 +49,10 @@
   bottom: var(--space-small);
 }
 
+.lang > * {
+  margin: 0 2px;
+}
+
 @media (max-width: 767px) {
   .history {
     width: 100%;

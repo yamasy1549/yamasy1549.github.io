@@ -8,6 +8,8 @@ import About2     from './About2.jsx'
 import Portfolios from './Portfolios.jsx'
 import About3     from './About3.jsx'
 import Interviews from './Interviews.jsx'
+import About4     from './About4.jsx'
+import Research   from './Research.jsx'
 import Footer     from './Footer.jsx'
 
 import normalize  from './normalize.css'
@@ -25,6 +27,8 @@ export default () => (
     <Portfolios />
     <About3 />
     <Interviews />
+    <About4 />
+    <Research />
     <Footer />
   </div>
 )

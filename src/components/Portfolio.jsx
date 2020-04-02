@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './Portfolio.css'
 
-export default ({ title, url, img, children }) => {
+export default ({ title, year, url, img, children }) => {
   let portfolioImg
   if(url.length != 0) {
     portfolioImg = 
@@ -26,7 +26,10 @@ export default ({ title, url, img, children }) => {
     <li className={styles.portfolio}>
       {portfolioImg}
       <div className={styles.description}>
-        <h3 className={styles.title}>{title}</h3>
+        <h3 className={styles.title}>
+          {title}
+          <small className={styles.year}>{year}</small>
+        </h3>
         <p className={styles.p}>{children}</p>
       </div>
     </li>
