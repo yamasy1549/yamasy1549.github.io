@@ -1,7 +1,11 @@
+const path = require('path')
+
 module.exports = {
+  mode: 'development',
+  // mode: 'production',
   entry: './src/index.jsx',
   output: {
-    path: '',
+    path: path.join(__dirname, ''),
     filename: 'index.js'
   },
   devtool: '#source-map',
@@ -14,7 +18,10 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: { loader: 'babel-loader', options: { presets: 'es2015' } }
+        use: {
+          loader: 'babel-loader',
+          options: { presets: ['@babel/preset-react', '@babel/preset-env'] }
+        }
       },
       {
         test: /\.css$/,
@@ -25,11 +32,8 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: function() {
-                return [
-                  require('autoprefixer')
-                ]
-              }
+              ident: 'postcss',
+              plugins: [ require('autoprefixer')() ]
             }
           }
         ]
