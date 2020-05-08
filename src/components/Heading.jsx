@@ -7,7 +7,7 @@ import styles  from './Heading.css'
 import logoImg from '../img/logo.png'
 
 export default () => (
-  <Section id='heading'>
+  <Section>
     <h1 className={styles.heading}>
       <img
         className={styles.logo}
