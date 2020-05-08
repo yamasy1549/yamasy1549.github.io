@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Tag from './Tag.jsx'
+
 import styles from './Portfolio.css'
 
 export default ({ title, year, url, img, children }) => {
@@ -28,7 +30,7 @@ export default ({ title, year, url, img, children }) => {
       <div className={styles.description}>
         <h3 className={styles.title}>
           {title}
-          <small className={styles.year}>{year}</small>
+          <Tag>{year}</Tag>
         </h3>
         <p className={styles.p}>{children}</p>
       </div>

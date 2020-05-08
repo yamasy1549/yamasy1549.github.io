@@ -1,0 +1,9 @@
+.paper {
+  line-height: var(--striking-line-height);
+}
+
+@media (max-width: 767px) {
+  .paper {
+    margin-bottom: var(--space-small);
+  }
+}

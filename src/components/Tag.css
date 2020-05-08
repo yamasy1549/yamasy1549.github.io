@@ -1,0 +1,7 @@
+.tag {
+  margin: var(--space-small);
+  padding: calc(var(--space-small) / 2) var(--space-small);
+  border-radius: var(--space-small);
+  background-color: var(--gray);
+  font-size: 1rem;
+}

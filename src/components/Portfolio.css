@@ -34,14 +34,6 @@
   margin-bottom: var(--space-small);
 }
 
-.year {
-  margin: var(--space-small);
-  padding: calc(var(--space-small) / 2) var(--space-small);
-  border-radius: var(--space-small);
-  background-color: var(--gray);
-  font-size: 1rem;
-}
-
 .p {
   letter-spacing: var(--paragraph-letter-spacing);
 }

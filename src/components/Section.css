@@ -11,6 +11,21 @@
   display: none;
 }
 
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.a:link,
+.a:hover,
+.a:active,
+.a:visited {
+  border: 0;
+}
+
 @media (max-width: 767px) {
   .section {
     padding: var(--space-medium) calc(var(--space-small) * 1.5);
