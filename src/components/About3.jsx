@@ -4,6 +4,6 @@ import About from './About.jsx'
 
 export default () => (
   <About id='about3'>
-    女性は珍しいとか、今ではそういう印象は薄まってきましたね。いい話
+    未成年で女性でプログラムを書く人間が珍しがられていた時代のインタビュー記事です。
   </About>
 )
