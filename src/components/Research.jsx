@@ -8,7 +8,7 @@ export default () => (
   <Section id='research'>
     <ul className={styles.interviews}>
       <Paper
-        journal='第13回 テキストアナリティクス・シンポジウム'
+        journal='第13回テキストアナリティクス・シンポジウム'
         author='山下紗苗, 上泰, 加藤恵梨, 酒井健, 奥村紀之'
         year='2018'
         url='https://www.ieice.org/ken/paper/20180906i1G8/'>
@@ -53,6 +53,14 @@ export default () => (
         year='2020'
         url='https://www.anlp.jp/proceedings/annual_meeting/2020/pdf_dir/P6-32.pdf'>
         テキストから推定される筆者の性格特性情報の活用の試みと考察
+      </Paper>
+
+      <Paper
+        journal='第7回自然言語処理シンポジウム'
+        author='山下紗苗, 奥村紀之'
+        year='2020'
+        url='https://www.ieice.org/ken/paper/20201202JCBw/'>
+        区切りのない雑文における文単位への分割
       </Paper>
     </ul>
   </Section>
