@@ -26,7 +26,7 @@ export default () => (
   <Section id='histories'>
     <ul className={styles.history}>
       <Event time='2014/04' icons={[]}>
-        明石高専 電気情報工学科入学
+        明石高専本科 電気情報工学科入学
       </Event>
 
       <Event time='2014/06' icons={['prog-rails']}>
@@ -34,7 +34,7 @@ export default () => (
       </Event>
 
       <Event time='2015/03~' icons={['prog-rails', 'html5-01', 'css3-01']}>
-        <a href='http://lo-upe.com'>LOUPE</a>にてインターン開始
+        <a href='http://lo-upe.com'>LOUPE</a>エンジニアインターン
       </Event>
 
       <Event time='2016/01~' icons={['html5-01', 'css3-01']}>
@@ -60,14 +60,35 @@ export default () => (
       <Event time='2017/08~' icons={['prog-js01', 'html5-01', 'css3-01', 'prog-rails']}>
         <a href='https://www.opt.ne.jp/opttechnologies/'>オプト</a> エンジニアインターン
       </Event>
-      <Event time='2019/04' icons={[]}>
-        明石高専 機械・電子システム工学専攻入学
+
+      <Event time='2019/03' icons={[]}>
+        明石高専本科 電気情報工学科卒業
       </Event>
 
+      <Event time='2019/04' icons={[]}>
+        明石高専専攻科 機械・電子システム工学専攻入学
+      </Event>
 
       <Event time='2019/08~' icons={['prog-python', 'prog-ruby']}>
         <a href='http://www.research.ibm.com/labs/tokyo/'>IBM Research Tokyo</a> 研究インターン
       </Event>
+
+      <Event time='2021/03' icons={[]}>
+        明石高専専攻科 機械・電子システム工学専攻卒業
+      </Event>
+
+      <Event time='2021/04' icons={[]}>
+        名古屋大学大学院 情報学研究科博士前期課程入学
+      </Event>
+
+      <Event time='2023/03' icons={[]}>
+        名古屋大学大学院 情報学研究科博士前期課程修了
+      </Event>
+
+      <Event time='2023/04' icons={[]}>
+        名古屋大学大学院 情報学研究科博士後期課程入学
+      </Event>
+
     </ul>
   </Section>
 )
